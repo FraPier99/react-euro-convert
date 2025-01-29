@@ -1,0 +1,5 @@
+useEffect(()=>{
+
+      fetchCurrencies()
+      
+          },[state.selectedCurrency])

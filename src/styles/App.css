@@ -1,0 +1,32 @@
+body{
+
+
+  background-color: #B0ABCB;
+}
+
+
+.container-display{
+  border:3px solid #e0dbdb;
+  align-items: center;
+
+  border-radius: 8px;
+  max-width: 380px;
+background-color: #ffff;
+height:390px;
+}
+
+
+
+
+/* SELECT  */
+
+.MuiAutocomplete-root.MuiAutocomplete-hasClearIcon.MuiAutocomplete-hasPopupIcon.mt-2.mb-2.css-1tlcqt-MuiAutocomplete-root,
+.MuiAutocomplete-root.MuiAutocomplete-hasPopupIcon.mt-2.mb-2.css-1tlcqt-MuiAutocomplete-root,
+.MuiFormControl-root.MuiTextField-root.css-1iuggla-MuiFormControl-root-MuiTextField-root,
+
+button{
+width: 100% !important;
+
+}
+
+

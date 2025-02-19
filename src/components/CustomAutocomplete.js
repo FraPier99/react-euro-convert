@@ -61,7 +61,7 @@ const CustomAutocomplete = ({ options,  label,onChange,value}) => {
                 component="img"
                 src={selectedOption.img}
                 alt={selectedOption.label}
-                sx={{  border:'0.2px solid  grey' ,borderRadius:'2px',width: 30, height: 30, mr: 1 }}
+                sx={{  borderRadius:'2px',width: 30, height: 30, mr: 1 }}
               />
             ) : null,
           }}

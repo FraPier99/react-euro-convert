@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from "react";
-import Container from "react-bootstrap/esm/Container";
+
 import axios from "axios";
 import aud from  '../images/aud.png'; 
 import  cad from '../images/cad.jpg';
@@ -8,16 +8,16 @@ import gbp from '../images/gbp.png'
 import  jpy from '../images/jpy.jpg'
 import usd from '../images/usd.jpg'
 import CustomAutocomplete from "./CustomAutocomplete";
-import AmountInput from "./AutoInput";
+import AmountInput from "./AmountInput";
+import SwapValute from "./SwapValute";
 import Button from '@mui/material/Button';
 import API_KEY from "../utils/api";
-
-
+import { Container, Row, Col, Form } from "react-bootstrap";
 
 const CurrencyDisplay = () => {
     const [state, setState] = useState({
       result:'',
-      amount: '',
+      amount: 100,
       convAmount: '',
       
       selectedCurrency: 'USD',
@@ -71,11 +71,11 @@ setState((prevState)=>({
 
 
     
-    useEffect(()=>{
+    // useEffect(()=>{
 
-      fetchCurrencies()
+    //   fetchCurrencies()
       
-          },[state.selectedCurrency])
+    //       },[state.selectedCurrency])
 
  
 
@@ -121,6 +121,17 @@ const exchangeRates = () =>{
 
 
 }
+
+
+const swapCurrencies = () => {
+setState((prevState)=>({
+...prevState,
+selectedCurrency: prevState.selectedConvCurrency,
+selectedConvCurrency: prevState.selectedCurrency,
+
+}))
+};
+
     // const handleChange = (e) => {
     //   const { name, value } = e.target;
     //   setState({ ...state, [name]: value });
@@ -133,9 +144,11 @@ const exchangeRates = () =>{
 
         justifyContent:'center',alignItems:'center',
       textAlign:'center'}}>
-<AmountInput label="Enter amount"
+<AmountInput label=""
         value={state.amount}
         onChange={(e)=>handleAmountChange(e.target.value)}
+
+      
       />
   {/* Selettore della valuta di origine */}
   <CustomAutocomplete
@@ -144,6 +157,7 @@ const exchangeRates = () =>{
         options={options}
         label="Select base currency"
       />
+      <SwapValute   onSwap={swapCurrencies}  />
 
       {/* Selettore della valuta di destinazione */}
       <CustomAutocomplete

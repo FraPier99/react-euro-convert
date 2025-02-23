@@ -72,7 +72,7 @@ setState((prevState)=>({
 
       fetchCurrencies()
       
-          },[state.selectedCurrency])
+          },[fetchCurrencies])
 
  
 

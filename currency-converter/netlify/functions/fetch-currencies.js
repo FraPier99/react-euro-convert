@@ -1,9 +1,10 @@
  
 
- import axios from "axios";
+
 
  exports.handler = async (event,context) =>{
-
+  // Import dinamico di axios
+  const axios = (await import('axios')).default;
     const {base} =  event.queryStringParameters
 
     const API_KEY =  process.env.REACT_APP_API_KEY

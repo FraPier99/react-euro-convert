@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState,useEffect, useCallback} from "react";
 import Container from "react-bootstrap/esm/Container";
 import axios from "axios";
 import aud from  '../images/aud.png'; 
@@ -29,7 +29,7 @@ const CurrencyDisplay = () => {
       }
     });
 
-   const fetchCurrencies =  async () =>{
+   const fetchCurrencies = useCallback(async () =>{
  try{
 
 const res = await  axios.get(`/.netlify/functions/fetch-currencies?base=${state.selectedCurrency}`)
@@ -53,8 +53,7 @@ setState((prevState)=>({
 
 
 
-   }
-
+   },[state.selectedCurrency])
 
     const options =[
       {label: 'USD',img:usd},

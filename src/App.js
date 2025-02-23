@@ -17,9 +17,9 @@ function App() {
 
   <><Container className='main-container mt-3 text-center'>
     
-    <h1 style={{ color: '#1D1F5B' }}>Currency Converter</h1>
+    <h1 style={{ color: '#2E3A59' }}>Currency Converter Test</h1>
 
-    <p>Check Lives rates,set rate allerts and more
+    <p style={{color:'#2E3A59'}}>Check Lives rates,set rate allerts and more
 
     </p>
  

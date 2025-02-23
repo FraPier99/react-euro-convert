@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centrare verticalmente */
+  background-color: #eff3f8; /* Leggero grigio per evitare sfondo piatto */
+  font-family: 'Roboto', sans-serif; /* Corretto errore di scrittura */
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#box {
+  width: 420px;
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); /* Ombra più marcata */
+}
+
+/* Migliora l'aspetto degli input */
+input, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #86b7fe; /* Stesso colore del focus */
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Stile per il pulsante */
+.button-convert {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff !important;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-convert:hover {
+  background-color: #0056b3 !important;
+  box-shadow: 0px 5px 10px rgba(0, 91, 187, 0.3) !important;
+}
+
+
+/* SELECT  */
+
+.MuiAutocomplete-root.MuiAutocomplete-hasClearIcon.MuiAutocomplete-hasPopupIcon.mt-2.mb-2.css-1tlcqt-MuiAutocomplete-root,
+.MuiAutocomplete-root.MuiAutocomplete-hasPopupIcon.mt-2.mb-2.css-1tlcqt-MuiAutocomplete-root,
+.MuiFormControl-root.MuiTextField-root.css-1iuggla-MuiFormControl-root-MuiTextField-root,
+
+button{
+width: 100% !important;
+padding:5px 10px;
+border-radius: 8px;
+}
+
+.button-convert,input{
+  
+    transition: all 0.3s ease-in-out;
+ 
+  
+}
+

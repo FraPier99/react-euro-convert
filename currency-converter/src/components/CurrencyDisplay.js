@@ -29,7 +29,6 @@ const CurrencyDisplay = () => {
       }
     });
 
-
    const fetchCurrencies =  async () =>{
  try{
 

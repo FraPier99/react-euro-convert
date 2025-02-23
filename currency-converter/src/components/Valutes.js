@@ -5,11 +5,10 @@ import React from "react";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Image from 'react-bootstrap/Image';
-import Dropdown from 'react-bootstrap/Dropdown';
+
 
 
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 
 
 const Valutes = ({ title, types, nome, onChange, value,selectedCurrency,val }) => {

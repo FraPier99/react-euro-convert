@@ -31,7 +31,7 @@ Crea la tua api_key **https://manage.exchangeratesapi.io/signup/free** (100 free
    npm install   
 
 3. **Crea un file.env:**
-    come in .env.examaple
+   come in .env.examaple
      
 
 4. **Avvia l'app:**

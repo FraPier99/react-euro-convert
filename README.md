@@ -1,5 +1,4 @@
-# 💱 React Currency Converter
-
+# 💱 React Euro Convert
 Un'applicazione React  per convertire **EUR** in un'altra valuta, utilizzando un'API esterna gestita con **Netlify**.
 
 ## 🚀 Funzionalità
@@ -22,7 +21,7 @@ Un'applicazione React  per convertire **EUR** in un'altra valuta, utilizzando un
 
 1. **Clona il repository:**
    ```bash
-   git clone https://github.com/FraPier99/react-currency-converter.git
+   git clone https://github.com/FraPier99/react-euro-convert.git
    cd react-currency-converter  
 
 2. **Installa dipendenze:**

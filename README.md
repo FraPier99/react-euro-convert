@@ -38,6 +38,6 @@ Crea la tua api_key qui:  **https://manage.exchangeratesapi.io/signup/free** (10
 
 4. **Avvia l'app:**
    ```bash
-   npm netlify-cli dev
+   npx netlify-cli dev
 
 

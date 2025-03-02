@@ -12,7 +12,7 @@ import AmountInput from "./AutoInput";
 import Button from '@mui/material/Button';
 
 
-
+// gestione della chiamati api e state
 
 const CurrencyDisplay = () => {
     const [state, setState] = useState({
@@ -159,29 +159,7 @@ className="mb-4 button-convert"
 
 
 {state.result ? <p>{state.result}</p> : null}
-        {/* <Valutes
-        val={images[state.selectedCurrency]}
-          value={state.amount}
-          nome="amount"
-          onChange={handleChange}
-          types={INITIAL_STATE}
-          title="Amount"
-          selectedCurrency={state.selectedCurrency}
-        />
-        <div className="hr-container">
-          <Button onClick={swapCurrencies}>🔃</Button>
-        </div>
-
-
-        <Valutes
-        val={images[state.selectedConvCurrency]}
-  value={state.convAmount}
-  nome="convAmount"
-  onChange={handleChange}
-  types={INITIAL_STATE}
-  title="Converted Amount"
-  selectedCurrency={state.selectedConvCurrency}
-/> */}
+       
       </Container>
     );
   };

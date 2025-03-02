@@ -7,7 +7,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import { Box} from '@mui/material';
 
 
-
+// gestione autocomlete per sceglire le valute
 
 
 const CustomAutocomplete = ({ options,  label,onChange,value}) => {

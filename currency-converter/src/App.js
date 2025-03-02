@@ -16,9 +16,7 @@ function App() {
 
   <><Container className='main-container mt-3 text-center'>
     
-    <h1>Currency Converter Test</h1>
-
-   
+    <h1>EUR to Foreign Exchange </h1>
  
        <ConversionDisplay />
        

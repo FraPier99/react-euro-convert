@@ -8,3 +8,4 @@ publish = "build"
   framework = "create-react-app"
   targetPort = 3000  # Cambia se il frontend React usa un'altra porta
   port = 8889  # Cambia la porta locale di Netlify per evitare conflitti
+  functionsPort = 9999  #le Netlify Functions devono avere una porta diversa

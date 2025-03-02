@@ -1,6 +1,7 @@
 # 💱 React Euro Convert
 Un'applicazione React  per convertire **EUR** in un'altra valuta, utilizzando  exchangeratesapi.io, gestita con **Netlify**.
-Crea la tua api_key **https://manage.exchangeratesapi.io/signup/free** (100 free req/month)
+
+Crea la tua api_key qui:  **https://manage.exchangeratesapi.io/signup/free** (100 free req/month)
 
 
 ## 🚀 Funzionalità

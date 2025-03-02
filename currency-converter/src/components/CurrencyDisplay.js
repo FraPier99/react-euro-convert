@@ -21,7 +21,7 @@ const CurrencyDisplay = () => {
       convAmount: '',
       
       selectedCurrency: 'EUR',
-      selectedConvCurrency: 'USD',
+      selectedConvCurrency: 'USD', 
     
       rates:{
 
@@ -54,6 +54,9 @@ setState((prevState)=>({
 
 
    },[state.selectedCurrency])
+
+
+   // dataset valut principali 
 
     const options =[
       {label: 'USD',img:usd},

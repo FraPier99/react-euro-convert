@@ -6,6 +6,7 @@ Il backend è gestito con **Netlify Functions**, che mantiene le API Key nascost
 📌 **Prima di iniziare:**  
 Crea un account su [ExchangeRatesAPI](https://manage.exchangeratesapi.io/signup/free) e genera la tua **API Key** (100 richieste gratuite al mese).  
 Se desideri **convertire tra più valute oltre all'Euro (€)**, puoi eseguire l'upgrade del piano.
+(Con il piano gratuito, anche se scegli una valuta diversa da convertire, la base rimarrà sempre l'Euro (EUR))
 
 
 ## 🚀 Funzionalità

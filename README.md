@@ -6,6 +6,7 @@ Il backend è gestito con **Netlify Functions**, che mantiene le API Key nascost
 📌 **Prima di iniziare:**  
 Crea un account su [ExchangeRatesAPI](https://manage.exchangeratesapi.io/signup/free) e genera la tua **API Key** (100 richieste gratuite al mese).  
 Se desideri **convertire tra più valute oltre all'Euro (€)**, puoi eseguire l'upgrade del piano.
+
 (Con il piano gratuito, anche se scegli una valuta diversa da convertire, la base rimarrà sempre l'Euro (EUR))
 
 
@@ -30,7 +31,7 @@ Se desideri **convertire tra più valute oltre all'Euro (€)**, puoi eseguire l
 1. **Clona il repository:**
    ```bash
    git clone https://github.com/FraPier99/react-euro-convert.git
-   cd react-currency-converter  
+   cd currency-converter  
 
 2. **Installa dipendenze:**
    ```bash

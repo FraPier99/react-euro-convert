@@ -1,7 +1,10 @@
 export const handler = async (event, context) => {
-    // Blocca le chiamate API in locale
-    if (process.env.NODE_ENV === "development") {
-      console.log("🛑 API disabilitata in sviluppo, nessuna chiamata effettuata.");
+    // Verifica se la richiesta è manuale o automatica
+    const isManualRequest = event.queryStringParameters?.manual === "true";
+  
+    // Blocca le chiamate automatiche in sviluppo, ma permette quelle manuali
+    if (process.env.NODE_ENV === "development" && !isManualRequest) {
+      console.log("🛑 API disabilitata in sviluppo, nessuna chiamata effettuata automaticamente.");
       return {
         statusCode: 200,
         body: JSON.stringify({ message: "Modalità sviluppo: nessuna chiamata API" }),
@@ -13,7 +16,7 @@ export const handler = async (event, context) => {
   
     // Legge la base dalla query string
     const { base } = event.queryStringParameters;
-    const API_KEY = process.env.API_KEY; 
+    const API_KEY = process.env.API_KEY; // ✅ Usa `API_KEY`, non `REACT_APP_API_KEY`
   
     if (!base) {
       console.error("❌ Errore: manca la valuta base.");

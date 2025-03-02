@@ -32,7 +32,7 @@ const CurrencyDisplay = () => {
    const fetchCurrencies = useCallback(async () =>{
  try{
 
-const res = await  axios.get(`/.netlify/functions/fetch-currencies?base=${state.selectedCurrency}`)
+const res = await  axios.get(`/.netlify/functions/fetch-currencies?base=${state.selectedCurrency}&manual=true`)
 
 
 setState((prevState)=>({

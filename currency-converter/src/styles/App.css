@@ -76,7 +76,9 @@ width: 100% !important;
 padding:5px 10px;
 border-radius: 8px;
 }
-
+.css-cmpglg-MuiFormControl-root-MuiTextField-root{
+  width: 100% !important;
+}
 .button-convert,input{
   
     transition: all 0.3s ease-in-out;

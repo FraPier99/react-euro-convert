@@ -107,7 +107,7 @@ const exchangeRates = () =>{
 
   setState((prevState)=>({
     ...prevState,
-    result :  `${amount} ${selectedCurrency} = ${amount * rate} ${selectedConvCurrency} `
+    result :  `${amount} ${selectedCurrency} = ${Math.ceil(amount * rate)} ${selectedConvCurrency} `
 
 
 
